@@ -1,4 +1,4 @@
-# Marco Rossi Photography — Site README
+# Lorenzo Oghittu Photography — Site README
 
 ## File structure
 

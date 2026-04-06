@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lorenzo Oghittu — Photography</title>
+  <meta name="description" content="Photography by Lorenzo Oghitu — black and white street and urban photography." />
+
+  <!-- Prevent image indexing by crawlers -->
+  <meta name="robots" content="noindex, noimageindex" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Barlow:wght@300;400&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="nav" id="nav">
+    <span class="nav-logo">Lorenzo Oghittu</span>
+    <ul class="nav-links" id="nav-links">
+      <li class="active" data-view="home">Home</li>
+      <li data-view="projects">Projects</li>
+      <li data-view="portfolio">Portfolio</li>
+      <li data-view="about">About</li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="mobile-menu" id="mobile-menu">
+      <li class="active" data-view="home">Home</li>
+      <li data-view="projects">Projects</li>
+      <li data-view="portfolio">Portfolio</li>
+      <li data-view="about">About</li>
+    </ul>
+  </nav>
+
+  <!-- ── HOME ─────────────────────────────────────────────── -->
+  <main>
+    <div class="view active" id="view-home">
+      <div class="sec-hdr">
+        <!-- <h1>Black & White Photography</h1> -->
+      </div>
+      <div class="home-split">
+
+        <div class="home-panel" data-target="projects">
+          <div class="panel-bg">
+            <!--
+              Replace this <img> with your own cover image.
+              Place it at: images/cover-projects.jpg
+              Recommended size: 900×1200px, JPG, quality 80
+            -->
+            <img
+              src="https://res.cloudinary.com/dcc2jtgtj/image/upload/v1775382679/cover_rxt7ir.jpg"
+              alt="Projects cover"
+              class="panel-img"
+              draggable="false"
+            />
+            <div class="panel-placeholder" aria-hidden="true">
+              <svg viewBox="0 0 340 480" xmlns="http://www.w3.org/2000/svg">
+                <line x1="170" y1="0" x2="170" y2="480" stroke="#1A1814" stroke-width=".6"/>
+                <line x1="0" y1="240" x2="340" y2="240" stroke="#1A1814" stroke-width=".6"/>
+                <rect x="30" y="60" width="125" height="160" fill="none" stroke="#1A1814" stroke-width=".55"/>
+                <rect x="185" y="60" width="125" height="160" fill="none" stroke="#1A1814" stroke-width=".55"/>
+                <rect x="30" y="260" width="125" height="160" fill="none" stroke="#1A1814" stroke-width=".3"/>
+                <rect x="185" y="260" width="125" height="160" fill="none" stroke="#1A1814" stroke-width=".3"/>
+                <circle cx="170" cy="240" r="5" fill="#1A1814"/>
+              </svg>
+            </div>
+          </div>
+          <div class="panel-label">
+            <!-- <span class="panel-arrow" aria-hidden="true">↗</span> -->
+            <h2>Projects</h2>
+            <p>[curated albums]</p>
+          </div>
+        </div>
+
+        <div class="home-panel" data-target="portfolio">
+          <div class="panel-bg">
+            <!--
+              Replace this <img> with your own cover image.
+              Place it at: images/cover-portfolio.jpg
+            -->
+            <img
+              src="https://res.cloudinary.com/dcc2jtgtj/image/upload/v1775381938/cigno_xnzpwc.jpg"
+              alt="Portfolio cover"
+              class="panel-img"
+              draggable="false"
+            />
+            <div class="panel-placeholder" aria-hidden="true">
+              <svg viewBox="0 0 340 480" xmlns="http://www.w3.org/2000/svg">
+                <line x1="0" y1="120" x2="340" y2="120" stroke="#1A1814" stroke-width=".6"/>
+                <line x1="0" y1="240" x2="340" y2="240" stroke="#1A1814" stroke-width=".6"/>
+                <line x1="0" y1="360" x2="340" y2="360" stroke="#1A1814" stroke-width=".6"/>
+                <line x1="85" y1="0" x2="85" y2="480" stroke="#1A1814" stroke-width=".6"/>
+                <line x1="170" y1="0" x2="170" y2="480" stroke="#1A1814" stroke-width=".6"/>
+                <line x1="255" y1="0" x2="255" y2="480" stroke="#1A1814" stroke-width=".6"/>
+              </svg>
+            </div>
+          </div>
+          <div class="panel-label">
+            <!-- <span class="panel-arrow" aria-hidden="true">↗</span> -->
+            <h2>Portfolio</h2>
+            <p>[selection of single frames]</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ── PROJECTS ───────────────────────────────────────── -->
+    <div class="view" id="view-projects">
+      <div class="sec-hdr">
+        <h1>Projects</h1>
+        <span class="cnt" id="projects-count"></span>
+        <button class="back-btn" data-target="home">← Home</button>
+      </div>
+      <div id="projects-list">
+        <div id="projects-list"></div>
+      </div>
+    </div>
+
+    <!-- ── SERIES ─────────────────────────────────────────── -->
+    <div class="view" id="view-series">
+      <div class="series-hdr">
+        <h2 id="series-title"></h2>
+        <span class="cnt" id="series-cnt"></span>
+        <button class="back-btn" data-target="projects">← Projects</button>
+      </div>
+      <div class="grid grid--3" id="series-grid"></div>
+    </div>
+
+    <!-- ── PORTFOLIO ──────────────────────────────────────── -->
+    <div class="view" id="view-portfolio">
+      <div class="sec-hdr">
+        <h1>Portfolio</h1>
+        <span class="cnt" id="portfolio-count"></span>
+        <button class="back-btn" data-target="home">← Home</button>
+      </div>
+      <div class="grid grid--4" id="portfolio-grid"></div>
+    </div>
+
+    <!-- ── ABOUT ──────────────────────────────────────────── -->
+    <div class="view" id="view-about">
+      <div class="sec-hdr">
+        <h1>About</h1>
+        <button class="back-btn" data-target="home">← Home</button>
+      </div>
+      <div class="about-wrap">
+        <div class="about-img">
+          <!--
+            Replace with your portrait or a favourite photo.
+            Place it at: images/about.jpg
+            Recommended: portrait orientation, JPG
+          -->
+          <img src="https://res.cloudinary.com/dcc2jtgtj/image/upload/v1775382711/about_aepzyy.jpg" alt="autoscatto" draggable="false" />
+        </div>
+        <div class="about-text">
+          <!-- <h2>Lorenzo Oghittu</h2> -->
+          <!--
+            Edit the paragraphs below with your own bio.
+          -->
+          <p>Born and raised in the Sardinian town of Quartu Sant'Elena a reasonable amount of years ago, 
+            I lived in Trento, Hamburg, Amsterdam and I spent some time in Rome.</p>
+          <p>I have always been interested in photography but I started taking pictures only after moving to Hamburg 
+            because it's too hard to make new friends when you are older than 25 and I had to find something that I could do alone.</p>
+          <p>I have a PhD in theoretical physics and a violin diploma, 
+            and this is the proof that I like to invest a lot of effort and time in useless things. 
+            This website is one of them.</p> 
+          <p>I love sports, specialty coffee, niche perfumery, flags and many other things.</p>
+          <p>Currently based nowhere.</p>
+          <div class="sig">Lorenzo Oghittu</div>
+          <div class="about-contact">
+            <span>Contact</span>
+            <!-- Replace with your actual email -->
+            <a href="mailto:l.oghittu@gmail.com">l.oghittu@gmail.com</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- ── LIGHTBOX ───────────────────────────────────────── -->
+  <!-- <div class="lb-wrap" id="lb" role="dialog" aria-modal="true" aria-label="Photo viewer">
+    <div class="lb-backdrop" id="lb-backdrop"></div>
+    <div class="lb-inner">
+      <button class="lb-x" id="lb-close" aria-label="Close">✕</button>
+      <div class="lb-img-box" id="lb-img-box">
+        <img id="lb-img" src="" alt="" draggable="false" />
+      </div>
+      <button class="lb-nav lb-prev" id="lb-prev" aria-label="Previous photo">←</button>
+      <button class="lb-nav lb-next" id="lb-next" aria-label="Next photo">→</button>
+      <div class="lb-foot">
+        <span class="lb-cap" id="lb-cap"></span>
+        <span class="lb-num" id="lb-num"></span>
+      </div>
+    </div>
+  </div> -->
+  <div class="lb-wrap" id="lb" role="dialog" aria-modal="true" aria-label="Photo viewer">
+    <div class="lb-backdrop" id="lb-backdrop"></div>
+    <div class="lb-inner">
+      <div class="lb-frame">
+        <div class="lb-top">
+          <span class="lb-context" id="lb-context"></span>
+          <div class="lb-top-right">
+            <span class="lb-num" id="lb-num"></span>
+            <button class="lb-x" id="lb-close" aria-label="Close">✕</button>
+          </div>
+        </div>
+        <div class="lb-img-box" id="lb-img-box">
+          <img id="lb-img" src="" alt="" draggable="false" />
+        </div>
+        <button class="lb-nav lb-prev" id="lb-prev" aria-label="Previous photo">←</button>
+        <button class="lb-nav lb-next" id="lb-next" aria-label="Next photo">→</button>
+        <div class="lb-bottom">
+          <span class="lb-cap" id="lb-cap"></span>
+          <span class="lb-date" id="lb-date"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="main.js"></script>
+
+  <footer class="footer">
+    <span>© 2022 — 2026  Lorenzo Oghittu. All rights reserved.</span>
+  </footer>
+</body>
+</html>

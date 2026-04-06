@@ -1,0 +1,6 @@
+Preview of images should probably be 3/2 since it's the most used ratio
+
+Maybe I should add the date in lines like the following:
+<img data-src="${photo.src}" alt="${photo.caption}" draggable="false" /> 
+
+Write the about section

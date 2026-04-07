@@ -252,9 +252,10 @@ button {
   display: grid;
   grid-template-columns: 1fr 1fr;
   /* min-height: calc(100dvh - var(--nav-height)); */
-  height: calc(100dvh - var(--nav-height) - var(--footer-height));
+  height: calc(100dvh - var(--nav-height) - 2 * var(--footer-height));
   gap: 6px;
   background: var(--paper);
+  margin-top: var(--footer-height);
 }
 
 .home-panel {
@@ -984,3 +985,16 @@ button {
   }
 }
 
+
+@media (max-width: 700px) {
+  #view-home .sec-hdr {
+    display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  .home-split {
+    height: calc(100dvh - var(--nav-height) - var(--footer-height));
+    margin-top: 0;
+  }
+}

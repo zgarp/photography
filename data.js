@@ -557,7 +557,7 @@ const SITE = {
   portfolio: [
     // { src: 'pictures/portfolio/cigno.jpg', caption: 'Swan, Amsterdam', date: 'May 2025'},
     // { src: 'pictures/portfolio/gabbiani.jpg', caption: 'Seaguls, Den Helder - Texel', date: 'July 2025' },
-    // { src: 'pictures/portfolio/trieste.jpg', caption: 'Seaguls and yacth from Molo Audace, Trieste', date: 'March 2024' },
+    // { src: 'pictures/portfolio/trieste.jpg', caption: 'Seaguls and yacth, Trieste', date: 'March 2024' },
     // { src: 'pictures/portfolio/saccargia.jpg', caption: 'Basilica di Saccargia, Codrongianos', date: 'August 2022' },
     // { src: 'pictures/portfolio/chiesetta.jpg', caption: 'Tiny chapel, Prato Piazza', date: 'July 2024'},
     // { src: 'pictures/portfolio/sorapis.jpg', caption: 'Punta Sorapis from Mosigo lake, San Vito di Cadore', date: 'August 2025'}, 

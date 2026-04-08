@@ -1017,3 +1017,14 @@ button {
   }
 }
 
+@media (max-width: 900px) and (orientation: landscape) {
+  .lb-inner {
+    width: auto;
+    height: calc(100dvh - var(--nav-height) - var(--footer-height) - 80px);
+  }
+
+  .lb-img-box img {
+    max-height: 100%;
+    width: auto;
+  }
+}

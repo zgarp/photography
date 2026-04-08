@@ -61,7 +61,7 @@ const SITE = {
       cover: 'https://res.cloudinary.com/dcc2jtgtj/image/upload/v1775382527/cover_xy6ggn.jpg',
       slug:  'harmaa',
       title: 'Harmaa',
-      desc:  'These pictures were shot around Helsinki, Jämijärvi e Aurejärvi between the 6th and 10th of Novembre 2025. Those are among the grayest days of the year in Finland.',
+      desc:  'These pictures were taken around Helsinki, Jämijärvi e Aurejärvi between the 6th and 10th of November. The constantly overcast sky and the absence of snow make those days the grayest of the year in Finland.',
       year:  'November 2025',
       photos: [
         // { src: 'pictures/harmaa/01.jpg', caption: '', date: ''},
@@ -171,7 +171,7 @@ const SITE = {
       cover: 'https://res.cloudinary.com/dcc2jtgtj/image/upload/v1775382127/cover_qmfqkv.jpg',
       slug:  'norman',
       title: 'Walk Sign is On',
-      desc:  'This little project recounts the five weeks I spent in Norman (Oklahoma) between September 15 and October 20, 2025, during which desolation, boredom, and a scorching sun rarely left me alone.',
+      desc:  'This little project recounts the five weeks I spent in Norman (Oklahoma) in 2025 between September 15 and October 20, during which desolation, boredom, and a scorching sun rarely left me alone.',
       year:  'September – October 2025',
       photos: [
         // { src: 'pictures/norman/01.jpg', caption: 'Legacy Trail', date: ''},
@@ -267,7 +267,7 @@ const SITE = {
       cover: 'https://res.cloudinary.com/dcc2jtgtj/image/upload/v1775373783/cover_rzzzmn.jpg',
       slug:  'sail',
       title: 'SAIL 2025',
-      desc:  'A spin-off to the project in Amsterdam, with pictures taken at the 5th edition of SAIL in 2025',
+      desc:  'A spin-off to the project in Amsterdam, with pictures taken at the 5th edition of SAIL in August 2025.',
       year:  'August 2025',
       photos: [
         // { src: 'pictures/sail/01.jpg', caption: '', date: ''},

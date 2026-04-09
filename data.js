@@ -217,7 +217,7 @@ const SITE = {
         // { src: 'pictures/norman/34.jpg', caption: 'Carson Engineering Center', date: ''},
         // { src: 'pictures/norman/35.jpg', caption: 'Fred Jones Jr. Museum of Art', date: ''},
         
-        { src: 'https://res.cloudinary.com/dcc2jtgtj/image/upload/v1775382127/cover_qmfqkv.jpg', caption: 'Legacy Trail', date: ''},
+        { src: 'https://res.cloudinary.com/dcc2jtgtj/image/upload/v1775382127/cover_qmfqkv.jpg', caption: 'E Lindsey Street', date: ''},
 
         { src: 'https://res.cloudinary.com/dcc2jtgtj/image/upload/v1775382091/01_a3o460.jpg', caption: 'Legacy Trail', date: ''},
         { src: 'https://res.cloudinary.com/dcc2jtgtj/image/upload/v1775382093/02_z5t26u.jpg', caption: 'Morland Avenue', date: ''},

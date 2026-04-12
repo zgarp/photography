@@ -587,6 +587,7 @@ const SITE = {
     // { src: 'pictures/portfolio/zandaam.jpg', caption: 'Building, Zandaam', date: 'November 2025' },
 
     { src: 'https://res.cloudinary.com/dcc2jtgtj/image/upload/v1775381938/cigno_xnzpwc.jpg', caption: 'Swan, Amsterdam', date: 'May 2025'},
+    { src: 'https://res.cloudinary.com/dcc2jtgtj/image/upload/v1776015842/coot_tgwexz.jpg', caption: 'Coot, Amsterdam', date: 'March 2026'},
     { src: 'https://res.cloudinary.com/dcc2jtgtj/image/upload/v1775381952/gabbiani_knaemt.jpg', caption: 'Seaguls, Den Helder - Texel', date: 'July 2025' },
     { src: 'https://res.cloudinary.com/dcc2jtgtj/image/upload/v1775382003/trieste_ayxxan.jpg', caption: 'Seaguls and yacth from Molo Audace, Trieste', date: 'March 2024' },
     { src: 'https://res.cloudinary.com/dcc2jtgtj/image/upload/v1775381972/saccargia_ngbfmr.jpg', caption: 'Basilica di Saccargia, Codrongianos', date: 'August 2022' },
@@ -596,6 +597,7 @@ const SITE = {
     { src: 'https://res.cloudinary.com/dcc2jtgtj/image/upload/v1775381948/faro_xdlfkt.jpg', caption: 'Lighthouse, Isola Piana', date: 'August 2025' },
     { src: 'https://res.cloudinary.com/dcc2jtgtj/image/upload/v1775381962/ovovia_uutxyj.jpg', caption: 'Paradiso cable car, Passo del Tonale', date: 'January 2025' },
     { src: 'https://res.cloudinary.com/dcc2jtgtj/image/upload/v1775381993/statua_cleycp.jpg', caption: 'Statue and clothes, Venezia', date: 'December 2025' },
+    { src: 'https://res.cloudinary.com/dcc2jtgtj/image/upload/v1776015853/mannequin_a64qbf.jpg', caption: 'Shy mannequin, Amsterdam', date: 'March 2026' },
     { src: 'https://res.cloudinary.com/dcc2jtgtj/image/upload/v1775381989/spiaggia_cm5kcr.jpg', caption: 'Beach, Málaga', date: 'June 2024' },
     { src: 'https://res.cloudinary.com/dcc2jtgtj/image/upload/v1775381921/bastione_w1bnuw.jpg', caption: 'Bastione St. Remy, Cagliari', date: 'March 2026' },
     { src: 'https://res.cloudinary.com/dcc2jtgtj/image/upload/v1775381979/sagoma_r3qzrm.jpg', caption: 'Silhouette, Venezia', date: 'December 2025' },
@@ -605,6 +607,7 @@ const SITE = {
     { src: 'https://res.cloudinary.com/dcc2jtgtj/image/upload/v1775381924/bici_g7dnzf.jpg', caption: 'Moving bike, Amsterdam', date: 'December 2025' },
     { src: 'https://res.cloudinary.com/dcc2jtgtj/image/upload/v1775381983/sbahn_mfzeqe.jpg', caption: 'Moving metro, Hamburg', date: 'April 2023' },
     { src: 'https://res.cloudinary.com/dcc2jtgtj/image/upload/v1775381945/dockland_wf3wrb.jpg', caption: 'Dockland-Bürogebäude, Hamburg', date: 'March 2023' },
+    { src: 'https://res.cloudinary.com/dcc2jtgtj/image/upload/v1776015872/RAI_npgl69.jpg', caption: 'Building, Amsterdam', date: 'March 2026' },
     { src: 'https://res.cloudinary.com/dcc2jtgtj/image/upload/v1775381966/palazzo_gzdwle.jpg', caption: 'Building in Java-eiland, Amsterdam', date: 'August 2025' },
     { src: 'https://res.cloudinary.com/dcc2jtgtj/image/upload/v1775381919/alhambra_aungk5.jpg', caption: 'Alhambra, Granada', date: 'June 2024' },
     { src: 'https://res.cloudinary.com/dcc2jtgtj/image/upload/v1775381935/chilehaus_wfzcof.jpg', caption: 'Chilehaus, Hamburg', date: 'May 2023'},

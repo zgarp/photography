@@ -591,7 +591,7 @@ const SITE = {
     { src: 'https://res.cloudinary.com/dcc2jtgtj/image/upload/v1775381952/gabbiani_knaemt.jpg', caption: 'Seaguls, Den Helder - Texel', date: 'July 2025' },
     { src: 'https://res.cloudinary.com/dcc2jtgtj/image/upload/v1775382003/trieste_ayxxan.jpg', caption: 'Seaguls and yacth from Molo Audace, Trieste', date: 'March 2024' },
     { src: 'https://res.cloudinary.com/dcc2jtgtj/image/upload/v1775381972/saccargia_ngbfmr.jpg', caption: 'Basilica di Saccargia, Codrongianos', date: 'August 2022' },
-    { src: 'https://res.cloudinary.com/dcc2jtgtj/image/upload/v1775381931/chiesetta_licx56.jpg', caption: 'Tiny chapel, Prato Piazza', date: 'July 2024'},
+    { src: 'https://res.cloudinary.com/dcc2jtgtj/image/upload/v1784033170/chiesetta_oqtcrz.jpg', caption: 'Tiny chapel, Prato Piazza', date: 'July 2024'},
     { src: 'https://res.cloudinary.com/dcc2jtgtj/image/upload/v1775381986/sorapis_jwryrq.jpg', caption: 'Punta Sorapis from Mosigo lake, San Vito di Cadore', date: 'August 2025'}, 
     { src: 'https://res.cloudinary.com/dcc2jtgtj/image/upload/v1775382007/ulivo_hvz6is.jpg', caption: 'Olive tree, Paulilatino', date: 'August 2022'},
     { src: 'https://res.cloudinary.com/dcc2jtgtj/image/upload/v1775381948/faro_xdlfkt.jpg', caption: 'Lighthouse, Isola Piana', date: 'August 2025' },

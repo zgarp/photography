@@ -114,7 +114,7 @@ const SITE = {
         // { src: 'pictures/harmaa/48.jpg', caption: '', date: ''},
         // { src: 'pictures/harmaa/49.jpg', caption: '', date: ''},
 
-        { src: 'https://res.cloudinary.com/dcc2jtgtj/image/upload/v1775382527/cover_xy6ggn.jpg', caption: '', date: ''},
+        // { src: 'https://res.cloudinary.com/dcc2jtgtj/image/upload/v1775382527/cover_xy6ggn.jpg', caption: '', date: ''},
 
         { src: 'https://res.cloudinary.com/dcc2jtgtj/image/upload/v1775382452/01_bfgpsl.jpg', caption: '', date: ''},
         { src: 'https://res.cloudinary.com/dcc2jtgtj/image/upload/v1775382453/02_babdw7.jpg', caption: '', date: ''},
@@ -217,7 +217,7 @@ const SITE = {
         // { src: 'pictures/norman/34.jpg', caption: 'Carson Engineering Center', date: ''},
         // { src: 'pictures/norman/35.jpg', caption: 'Fred Jones Jr. Museum of Art', date: ''},
         
-        { src: 'https://res.cloudinary.com/dcc2jtgtj/image/upload/v1775382127/cover_qmfqkv.jpg', caption: 'E Lindsey Street', date: ''},
+        // { src: 'https://res.cloudinary.com/dcc2jtgtj/image/upload/v1775382127/cover_qmfqkv.jpg', caption: 'E Lindsey Street', date: ''},
 
         { src: 'https://res.cloudinary.com/dcc2jtgtj/image/upload/v1775382091/01_a3o460.jpg', caption: 'Legacy Trail', date: ''},
         { src: 'https://res.cloudinary.com/dcc2jtgtj/image/upload/v1775382093/02_z5t26u.jpg', caption: 'Morland Avenue', date: ''},
@@ -306,7 +306,7 @@ const SITE = {
         // { src: 'pictures/sail/30.jpg', caption: '', date: ''},
         // { src: 'pictures/sail/31.jpg', caption: '', date: ''},
 
-        { src: 'https://res.cloudinary.com/dcc2jtgtj/image/upload/v1775373783/cover_rzzzmn.jpg', caption: '', date: ''},
+        // { src: 'https://res.cloudinary.com/dcc2jtgtj/image/upload/v1775373783/cover_rzzzmn.jpg', caption: '', date: ''},
         { src: 'https://res.cloudinary.com/dcc2jtgtj/image/upload/v1775373722/01_ujdm8x.jpg', caption: '', date: ''},
         { src: 'https://res.cloudinary.com/dcc2jtgtj/image/upload/v1775373723/02_f73lcg.jpg', caption: '', date: ''},
         { src: 'https://res.cloudinary.com/dcc2jtgtj/image/upload/v1775373725/03_n8mhmj.jpg', caption: '', date: ''},
@@ -443,7 +443,7 @@ const SITE = {
         // { src: 'pictures/amsterdam/73.jpg', caption: 'Our Domain', date: '27 February 2024' },
         // { src: 'pictures/amsterdam/74.jpg', caption: 'Our Domain', date: '29 September 2023' },
 
-        { src: 'https://res.cloudinary.com/dcc2jtgtj/image/upload/v1775382679/cover_rxt7ir.jpg', caption: 'Amstelstation', date: '11 February 2024' },        
+        // { src: 'https://res.cloudinary.com/dcc2jtgtj/image/upload/v1775382679/cover_rxt7ir.jpg', caption: 'Amstelstation', date: '11 February 2024' },        
 
         { src: 'https://res.cloudinary.com/dcc2jtgtj/image/upload/v1775382555/01_vqyj9p.jpg', caption: 'Plantage Muidergracht from Ben Polakbrug (brug 258)', date: '1 March 2023' },        
         { src: 'https://res.cloudinary.com/dcc2jtgtj/image/upload/v1775382557/02_oiwiq6.jpg', caption: 'Nieuwe Achtergracht from Derkje Hazewinkel-Suringabrug (brug 2522)', date: '1 March 2023' },

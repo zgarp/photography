@@ -28,8 +28,8 @@ body {
   color: var(--ink);
   min-height: 100dvh;
   /* Disable text selection on the whole page to discourage casual copying */
-  -webkit-user-select: none;
-  user-select: none;
+  /* -webkit-user-select: none; */
+  /* user-select: none; */
 }
 
 img {
@@ -40,7 +40,7 @@ img {
   /* Disable drag on all images */
   -webkit-user-drag: none;
   /* user-drag: none; */
-  pointer-events: none; /* prevents right-click save on most browsers */
+  /* pointer-events: none; */
 }
 
 button {
@@ -580,40 +580,27 @@ button {
 }
 
 .about-text {
-  padding: 44px 44px;
+  padding: 28px;
   text-align: justify;
 }
-.about-text h2 {
-  font-family: var(--serif);
-  font-size: 22px;
-  font-weight: 300;
-  letter-spacing: 0.08em;
-  color: var(--ink);
-  margin-bottom: 26px;
-}
+
 .about-text p {
   font-size: 14px;
   color: var(--ink-mid);
   line-height: 1.85;
   margin-bottom: 16px;
-  /* Allow text selection in the about section */
-  -webkit-user-select: text;
-  user-select: text;
 }
-.sig {
-  font-family: var(--serif);
-  font-style: italic;
-  font-size: 18px;
-  font-weight: 300;
-  color: var(--ink);
-  margin-top: 30px;
-  letter-spacing: 0.04em;
+
+.about-text p:last-of-type {
+  margin-bottom: 0;
 }
+
 .about-contact {
-  margin-top: 32px;
-  padding-top: 24px;
+  margin-top: 28px;
+  padding-top: 28px;
   border-top: 0.5px solid var(--rule);
 }
+
 .about-contact span {
   font-size: 10px;
   letter-spacing: 0.2em;
@@ -622,13 +609,34 @@ button {
   display: block;
   margin-bottom: 7px;
 }
+
 .about-contact a {
   font-size: 13px;
   color: var(--ink-mid);
   text-decoration: none;
   transition: color var(--transition);
 }
+
 .about-contact a:hover { color: var(--ink); }
+
+.about-award {
+  margin-top: 28px;
+  padding-top: 28px;
+  border-top: 0.5px solid var(--rule);
+  padding-bottom: 28px;
+}
+
+.about-award img {
+  width: 50px;
+  height: auto;
+  pointer-events: none;
+}
+
+.about-award a {
+  display: inline-block;
+  cursor: pointer;
+}
+
 
 /* ── LIGHTBOX ─────────────────────────────────────────── */
 .lb-wrap {

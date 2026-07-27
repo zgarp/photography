@@ -286,9 +286,15 @@ lbImgBox.addEventListener('touchend', e => {
 */
 
 // Disable right-click context menu sitewide
+// document.addEventListener('contextmenu', e => {
+//   e.preventDefault();
+//   return false;
+// });
 document.addEventListener('contextmenu', e => {
-  e.preventDefault();
-  return false;
+  if (e.target.tagName !== 'A' && e.target.tagName !== 'P' && e.target.tagName !== 'SPAN') {
+    e.preventDefault();
+    return false;
+  }
 });
 
 // Disable common keyboard shortcuts for saving / printing

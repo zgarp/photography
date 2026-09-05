@@ -36,7 +36,7 @@ function showView(name) {
 $$('#nav-links li, #mobile-menu li').forEach(li => {
   li.addEventListener('click', () => {
     const target = li.dataset.view;
-    if (target === 'portfolio') buildPortfolio();
+    if (target === 'frames') buildFrames();
     showView(target);
   });
 });
@@ -46,7 +46,7 @@ document.addEventListener('click', e => {
   const el = e.target.closest('[data-target]');
   if (!el) return;
   const target = el.dataset.target;
-  if (target === 'portfolio') buildPortfolio();
+  if (target === 'frames') buildFrames();
   showView(target);
 });
 
@@ -91,8 +91,8 @@ function injectMetadata() {
   });
 
   // Portfolio count
-  const portfolioCount = $('#portfolio-count');
-  if (portfolioCount) portfolioCount.textContent = `${SITE.portfolio.length} photographs`;
+  const framesCount = $('#frames-count');
+  if (framesCount) framesCount.textContent = `${SITE.frames.length} photographs`;
 }
 
 /* ── LAZY IMAGE LOADING ───────────────────────────────── */
@@ -153,20 +153,20 @@ function openSeries(idx) {
 }
 
 /* ── PORTFOLIO GRID ───────────────────────────────────── */
-let portfolioBuilt = false;
+let framesBuilt = false;
 
-function buildPortfolio() {
-  lbContext = 'Portfolio';
-  if (portfolioBuilt) return;
-  portfolioBuilt = true;
+function buildFrames() {
+  lbContext = 'Frames';
+  if (framesBuilt) return;
+  framesBuilt = true;
 
-  const grid = $('#portfolio-grid');
+  const grid = $('#frames-grid');
   grid.innerHTML = '';
 
   // lbItems = SITE.portfolio.map(p => ({ src: p.lb || p.src, caption: p.caption }));
-  lbItems = SITE.portfolio.map(p => ({ src: p.lb || p.src, caption: p.caption, date: p.date }));
+  lbItems = SITE.frames.map(p => ({ src: p.lb || p.src, caption: p.caption, date: p.date }));
 
-  SITE.portfolio.forEach((photo, i) => {
+  SITE.frames.forEach((photo, i) => {
     const item = document.createElement('div');
     item.className = 'g-item';
     // should I add some reference to the date in <img data-src ... />??
@@ -176,7 +176,7 @@ function buildPortfolio() {
     `;
     item.addEventListener('click', () => {
       // Rebuild lbItems in case series was opened in between
-      lbItems = SITE.portfolio.map(p => ({ src: p.lb || p.src, caption: p.caption, date: p.date }));
+      lbItems = SITE.frames.map(p => ({ src: p.lb || p.src, caption: p.caption, date: p.date }));
       openLB(i);
     });
     grid.appendChild(item);

@@ -27,7 +27,7 @@
     <ul class="nav-links" id="nav-links">
       <li class="active" data-view="home">Home</li>
       <li data-view="projects">Projects</li>
-      <li data-view="portfolio">Portfolio</li>
+      <li data-view="frames">Frames</li>
       <li data-view="about">About</li>
     </ul>
     <button class="hamburger" id="hamburger" aria-label="Open menu">
@@ -36,7 +36,7 @@
     <ul class="mobile-menu" id="mobile-menu">
       <li class="active" data-view="home">Home</li>
       <li data-view="projects">Projects</li>
-      <li data-view="portfolio">Portfolio</li>
+      <li data-view="frames">Frames</li>
       <li data-view="about">About</li>
     </ul>
   </nav>
@@ -44,9 +44,9 @@
   <!-- ── HOME ─────────────────────────────────────────────── -->
   <main>
     <div class="view active" id="view-home">
-      <div class="sec-hdr">
+      <!-- <div class="sec-hdr">
         <h1>Home</h1>
-      </div>
+      </div> -->
       <div class="home-split">
 
         <div class="home-panel" data-target="projects">
@@ -81,15 +81,15 @@
           </div>
         </div>
 
-        <div class="home-panel" data-target="portfolio">
+        <div class="home-panel" data-target="frames">
           <div class="panel-bg">
             <!--
               Replace this <img> with your own cover image.
-              Place it at: images/cover-portfolio.jpg
+              Place it at: images/cover-frames.jpg
             -->
             <img
               src="https://res.cloudinary.com/dcc2jtgtj/image/upload/v1775381938/cigno_xnzpwc.jpg"
-              alt="Portfolio cover"
+              alt="Frames cover"
               class="panel-img"
               draggable="false"
             />
@@ -106,7 +106,7 @@
           </div>
           <div class="panel-label">
             <!-- <span class="panel-arrow" aria-hidden="true">↗</span> -->
-            <h2>Portfolio</h2>
+            <h2>Frames</h2>
             <p>[selection of single frames]</p>
           </div>
         </div>
@@ -116,14 +116,12 @@
 
     <!-- ── PROJECTS ───────────────────────────────────────── -->
     <div class="view" id="view-projects">
-      <div class="sec-hdr">
-        <h1>Projects</h1>
-        <span class="cnt" id="projects-count"></span>
-        <button class="back-btn" data-target="home">← Home</button>
-      </div>
-      <div id="projects-list">
-        <div id="projects-list"></div>
-      </div>
+      <!-- <div class="sec-hdr"> -->
+        <!-- <h1>Projects</h1> -->
+        <!-- <span class="cnt" id="projects-count"></span> -->
+        <!-- <button class="back-btn" data-target="home">← Home</button> -->
+      <!-- </div> -->
+      <div id="projects-list"></div>
     </div>
 
     <!-- ── SERIES ─────────────────────────────────────────── -->
@@ -131,27 +129,27 @@
       <div class="series-hdr">
         <h2 id="series-title"></h2>
         <span class="cnt" id="series-cnt"></span>
-        <button class="back-btn" data-target="projects">← Projects</button>
+        <!-- <button class="back-btn" data-target="projects">← Projects</button> -->
       </div>
       <div class="grid grid--3" id="series-grid"></div>
     </div>
 
-    <!-- ── PORTFOLIO ──────────────────────────────────────── -->
-    <div class="view" id="view-portfolio">
+    <!-- ── FRAMES ──────────────────────────────────────── -->
+    <div class="view" id="view-frames">
       <div class="sec-hdr">
-        <h1>Portfolio</h1>
-        <span class="cnt" id="portfolio-count"></span>
-        <button class="back-btn" data-target="home">← Home</button>
+        <h1>Frames</h1>
+        <span class="cnt" id="frames-count"></span>
+        <!-- <button class="back-btn" data-target="home">← Home</button> -->
       </div>
-      <div class="grid grid--4" id="portfolio-grid"></div>
+      <div class="grid grid--4" id="frames-grid"></div>
     </div>
 
     <!-- ── ABOUT ──────────────────────────────────────────── -->
     <div class="view" id="view-about">
-      <div class="sec-hdr">
+      <!-- <div class="sec-hdr">
         <h1>About</h1>
         <button class="back-btn" data-target="home">← Home</button>
-      </div>
+      </div> -->
       <div class="about-wrap">
         <div class="about-img">
           <!--

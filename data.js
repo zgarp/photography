@@ -557,11 +557,11 @@ const SITE = {
     },
   ],
 
-  /* ── PORTFOLIO ────────────────────────────────────────
+  /* ── FRAMES ────────────────────────────────────────
      Standalone photographs not tied to a series.
      Same shape as photos above.
   ──────────────────────────────────────────────────────── */
-  portfolio: [
+  frames: [
     // { src: 'pictures/portfolio/cigno.jpg', caption: 'Swan, Amsterdam', date: 'May 2025'},
     // { src: 'pictures/portfolio/gabbiani.jpg', caption: 'Seaguls, Den Helder - Texel', date: 'July 2025' },
     // { src: 'pictures/portfolio/trieste.jpg', caption: 'Seaguls and yacth, Trieste', date: 'March 2024' },

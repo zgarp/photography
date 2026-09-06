@@ -51,8 +51,14 @@ document.addEventListener('click', e => {
 });
 
 // Project row clicks
+// document.addEventListener('click', e => {
+//   const row = e.target.closest('.project-row');
+//   if (!row) return;
+//   openSeries(parseInt(row.dataset.series, 10));
+// });
+
 document.addEventListener('click', e => {
-  const row = e.target.closest('.project-row');
+  const row = e.target.closest('.project-card');
   if (!row) return;
   openSeries(parseInt(row.dataset.series, 10));
 });
@@ -70,20 +76,32 @@ function injectMetadata() {
 
   const list = document.getElementById('projects-list');
     SITE.series.forEach((s, i) => {
+      // list.innerHTML += `
+      //   <div class="project-row" data-series="${i}">
+      //     <div class="proj-cover">
+      //       <img src="${s.cover}" alt="${s.title} cover" draggable="false" />
+      //     </div>
+      //     <div class="proj-meta">
+      //       <div>
+      //         <h3>${s.title}</h3>
+      //         <p>${s.desc}</p>
+      //       </div>
+      //     <div class="mf">${s.photos.length} photographs · ${s.year}</div>
+      //   </div>
+      // </div>
       list.innerHTML += `
-        <div class="project-row" data-series="${i}">
+        <div class="project-card" data-series="${i}">
           <div class="proj-cover">
             <img src="${s.cover}" alt="${s.title} cover" draggable="false" />
           </div>
           <div class="proj-meta">
-            <div>
-              <h3>${s.title}</h3>
-              <p>${s.desc}</p>
-            </div>
-          <div class="mf">${s.photos.length} photographs · ${s.year}</div>
+            <h3>${s.title}</h3>
+            <p>${s.desc}</p>
+            <div class="mf">${s.photos.length} photographs · ${s.year}</div>
+          </div>
         </div>
-      </div>
-    `;});
+      `;});
+        
   // Per-series footer metadata
   SITE.series.forEach((s, i) => {
     const el = $(`#meta-${i}`);

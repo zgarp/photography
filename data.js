@@ -58,7 +58,7 @@ const SITE = {
   ──────────────────────────────────────────────────────── */
   series: [
     {
-      cover: 'https://res.cloudinary.com/dcc2jtgtj/image/upload/v1775382527/cover_xy6ggn.jpg',
+      cover: 'https://res.cloudinary.com/dcc2jtgtj/image/upload/v1792958084/cover_new_egjdpi.jpg',
       slug:  'harmaa',
       title: 'Harmaa',
       desc:  'These pictures were taken around Helsinki, Jämijärvi e Aurejärvi between the 6th and 10th of November. The constantly overcast sky and the absence of snow make those days the grayest of the year in Finland.',
@@ -168,7 +168,7 @@ const SITE = {
       ],
     },
     {
-      cover: 'https://res.cloudinary.com/dcc2jtgtj/image/upload/v1775382127/cover_qmfqkv.jpg',
+      cover: 'https://res.cloudinary.com/dcc2jtgtj/image/upload/v1792958162/cover_new_hsm6a8.jpg',
       slug:  'norman',
       title: 'Walk Sign is On',
       desc:  'This little project recounts the five weeks I spent in Norman (Oklahoma) in 2025 between September 15 and October 20, during which desolation, boredom, and a scorching sun rarely left me alone.',

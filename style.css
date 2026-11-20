@@ -349,6 +349,25 @@ button {
   color: var(--ink);
 } 
 
+.panel-label p {
+  transform-origin: left bottom;
+  transition: transform var(--transition);
+}
+
+.home-panel:hover .panel-label p {
+  transform: scale(1.1);
+}
+
+.panel-label h2 {
+  transform-origin: left bottom;
+  transition: transform var(--transition);
+}
+
+.home-panel:hover .panel-label h2 {
+  transform: scale(1.2);
+}
+
+
 /* THIS IS FOR THE NEW STYLE (SMAL PANELS APPEARING) */
 /* .panel-label {
   position: absolute;

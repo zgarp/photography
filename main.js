@@ -125,7 +125,7 @@ function injectMetadata() {
           <img src="${s.cover}" alt="${s.title} cover" draggable="false" />
         </div>
         <div class="proj-meta">
-          <h3>${s.title}</h3>
+          <h3>${s.title} <span class="cta-arrow">↗</span></h3>
           <p>${s.desc}</p>
           <div class="mf">${s.photos.length} photographs · ${s.year}</div>
         </div>

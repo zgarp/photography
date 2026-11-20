@@ -69,46 +69,70 @@ $('#hamburger').addEventListener('click', () => {
 });
 
 /* ── METADATA INJECTION ───────────────────────────────── */
+// function injectMetadata() {
+//   // Project count
+//   const projectsCount = $('#projects-count');
+//   if (projectsCount) projectsCount.textContent = `${SITE.series.length} albums`;
+
+//   const list = document.getElementById('projects-list');
+//     SITE.series.forEach((s, i) => {
+//       // list.innerHTML += `
+//       //   <div class="project-row" data-series="${i}">
+//       //     <div class="proj-cover">
+//       //       <img src="${s.cover}" alt="${s.title} cover" draggable="false" />
+//       //     </div>
+//       //     <div class="proj-meta">
+//       //       <div>
+//       //         <h3>${s.title}</h3>
+//       //         <p>${s.desc}</p>
+//       //       </div>
+//       //     <div class="mf">${s.photos.length} photographs · ${s.year}</div>
+//       //   </div>
+//       // </div>
+//       list.innerHTML += `
+//         <div class="project-card" data-series="${i}">
+//           <div class="proj-cover">
+//             <img src="${s.cover}" alt="${s.title} cover" draggable="false" />
+//           </div>
+//           <div class="proj-meta">
+//             <h3>${s.title}</h3>
+//             <p>${s.desc}</p>
+//             <div class="mf">${s.photos.length} photographs · ${s.year}</div>
+//           </div>
+//         </div>
+//       `;});
+        
+//   // Per-series footer metadata
+//   SITE.series.forEach((s, i) => {
+//     const el = $(`#meta-${i}`);
+//     if (el) el.textContent = `${s.photos.length} photographs · ${s.year}`;
+//   });
+
+//   // Portfolio count
+//   const framesCount = $('#frames-count');
+//   if (framesCount) framesCount.textContent = `${SITE.frames.length} photographs`;
+// }
+
 function injectMetadata() {
-  // Project count
   const projectsCount = $('#projects-count');
   if (projectsCount) projectsCount.textContent = `${SITE.series.length} albums`;
 
   const list = document.getElementById('projects-list');
-    SITE.series.forEach((s, i) => {
-      // list.innerHTML += `
-      //   <div class="project-row" data-series="${i}">
-      //     <div class="proj-cover">
-      //       <img src="${s.cover}" alt="${s.title} cover" draggable="false" />
-      //     </div>
-      //     <div class="proj-meta">
-      //       <div>
-      //         <h3>${s.title}</h3>
-      //         <p>${s.desc}</p>
-      //       </div>
-      //     <div class="mf">${s.photos.length} photographs · ${s.year}</div>
-      //   </div>
-      // </div>
-      list.innerHTML += `
-        <div class="project-card" data-series="${i}">
-          <div class="proj-cover">
-            <img src="${s.cover}" alt="${s.title} cover" draggable="false" />
-          </div>
-          <div class="proj-meta">
-            <h3>${s.title}</h3>
-            <p>${s.desc}</p>
-            <div class="mf">${s.photos.length} photographs · ${s.year}</div>
-          </div>
-        </div>
-      `;});
-        
-  // Per-series footer metadata
   SITE.series.forEach((s, i) => {
-    const el = $(`#meta-${i}`);
-    if (el) el.textContent = `${s.photos.length} photographs · ${s.year}`;
+    list.innerHTML += `
+      <div class="project-card" data-series="${i}">
+        <div class="proj-cover">
+          <img src="${s.cover}" alt="${s.title} cover" draggable="false" />
+        </div>
+        <div class="proj-meta">
+          <h3>${s.title}</h3>
+          <p>${s.desc}</p>
+          <div class="mf">${s.photos.length} photographs · ${s.year}</div>
+        </div>
+      </div>
+    `;
   });
 
-  // Portfolio count
   const framesCount = $('#frames-count');
   if (framesCount) framesCount.textContent = `${SITE.frames.length} photographs`;
 }
